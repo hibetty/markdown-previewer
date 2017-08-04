@@ -18,8 +18,11 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <textarea onChange={this.handleInput} value={this.state.value} />
-        <div dangerouslySetInnerHTML={{__html: this.state.input}} />
+        <h1>Markdown Previewer</h1>
+        <div className="wrapper">
+          <textarea onChange={this.handleInput} value={this.state.value} autoFocus />
+          <div className="right" dangerouslySetInnerHTML={{__html: this.state.input}} />
+        </div>
       </div>
     );
   }
