@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --content-base build/"
+    "start": "node server",
+    "start-webpack": "webpack-dev-server --content-base build/"
   },
   "keywords": [
     "react",
@@ -14,6 +15,7 @@
   "author": "Betty Lin",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.15.3",
     "marked": "^0.3.6",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
