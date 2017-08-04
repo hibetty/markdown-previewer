@@ -22416,8 +22416,17 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
       null,
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('textarea', { onChange: this.handleInput, value: this.state.value }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { dangerouslySetInnerHTML: { __html: this.state.input } })
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'h1',
+        null,
+        'Markdown Previewer'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'wrapper' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('textarea', { onChange: this.handleInput, value: this.state.value, autoFocus: true }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'right', dangerouslySetInnerHTML: { __html: this.state.input } })
+      )
     );
   }
 }
