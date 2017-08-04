@@ -1,0 +1,8 @@
+body {
+  background-color: tomato;
+}
+
+textarea {
+  width: 50%;
+  height: 100%;
+}
