@@ -19,8 +19,9 @@ export default class App extends React.Component {
     return (
       <div>
         <h1>Markdown Previewer</h1>
+        <p>Welcome! Type or copy/paste your markdown on the left to see a preview on the right!</p>
         <div className="wrapper">
-          <textarea onChange={this.handleInput} value={this.state.value} autoFocus />
+          <textarea onChange={this.handleInput} autoFocus />
           <div className="right" dangerouslySetInnerHTML={{__html: this.state.input}} />
         </div>
       </div>

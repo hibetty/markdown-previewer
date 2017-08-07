@@ -13,7 +13,7 @@ textarea {
   font-size: 18px;
 }
 
-textarea:focus {
+textarea, textarea:focus, textarea:active {
   outline: none;
   border-color: #aaa;
   border-radius: 3px;

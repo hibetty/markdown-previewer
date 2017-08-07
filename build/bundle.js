@@ -22422,9 +22422,14 @@ class App extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         'Markdown Previewer'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'p',
+        null,
+        'Welcome! Type or copy/paste your markdown on the left to see a preview on the right!'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'wrapper' },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('textarea', { onChange: this.handleInput, value: this.state.value, autoFocus: true }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('textarea', { onChange: this.handleInput, autoFocus: true }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'right', dangerouslySetInnerHTML: { __html: this.state.input } })
       )
     );
